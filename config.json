@@ -1,6 +1,6 @@
 {
   "apiUrl": "https://api.placetel.de/v2/faxes",
   "apiToken": "ENTER_API_KEY_HERE",
-  "downloadDir": "./faxes",
-  "intervalInSeconds": 30
+  "downloadDir": "./fax",
+  "intervalInSeconds": 120
 }

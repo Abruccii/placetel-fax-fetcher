@@ -2,23 +2,24 @@
   "name": "placetel-fax-fetcher",
   "version": "1.0.0",
   "description": "Checks Placetel API for new Fax and stores them in Filestorage",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
+  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node ./dist/index.js",
-    "yeet": "npm run build && npm run start"
+    "start": "node index.js",
+    "build": "pkg ."
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*"
+    ],
+    "outputPath": "dist",
+    "targets": [
+      "node18-win-x64"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abruccii/placetel-fax-fetcher.git"
-  },
-  "devDependencies": {
-    "@types/cli-progress": "^3.11.6",
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^18.19.59",
-    "typescript": "^5.6.3"
   },
   "keywords": [
     "Placetel",
@@ -32,10 +33,7 @@
   },
   "homepage": "https://github.com/Abruccii/placetel-fax-fetcher#readme",
   "dependencies": {
-    "axios": "^1.7.7",
     "cli-progress": "^3.12.0",
-    "fs": "^0.0.1-security",
-    "fs-extra": "^11.2.0",
-    "node-schedule": "^2.1.1"
+    "fs-extra": "^11.2.0"
   }
 }
