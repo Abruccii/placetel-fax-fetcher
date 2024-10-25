@@ -5,7 +5,7 @@ Der Placetel Fax Fetch nutzt die Placetel Web API um Placetel nach neuen Fax Nac
 Entsprechend muss in Placetel unter dem Punkt `Integration` > `Web API` ein API Schlüssel erstellt werden. Der Scope Faxes würde hierbei reichen.
 
 Bitte entsprechend den Inhalt der config.json Datei anpassen (API Key einfügen und ggf. Ablageordner für die Fax Nachrichten ändern)
-> Wichtig bei Windows: Pfade müssen mit 2 \ angegeben werden. (z.B. D:\\Daten\\PDF Ablage)
+> Wichtig bei Windows: Pfade müssen mit 2 \ angegeben werden. (z.B. D:\\\Daten\\\PDF Ablage)
 
 Wenn NodeJS auf dem Server installiert ist, kann das Script direkt mit den Befehlen `npm install` und `node index.js` ausgeführt werden. 
 Alternativ kann für Windows ein PKG Build als single executable (.exe) heruntergeladen werden. Dies beinhaltet bereits NodeJS und benötigte Libs. 
